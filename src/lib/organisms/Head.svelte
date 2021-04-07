@@ -8,33 +8,30 @@
 </script>
 
 
-{#if screenIsBig}
-
-
-
-	<Parallax sections={1.5}> 
 <main class="head shadow-5">
+
+	{#if screenIsBig}
+
 			<Navbar />
+	<Parallax sections={1.35}> 
 		<ParallaxLayer rate={-0.5} offset={-0.5}>
 			<Form />
  	 </ParallaxLayer>
 
-</main>
 
 	</Parallax>	
 
 {:else}
 
-<main class="head shadow-5">
 			<Navbar />
 			<Form />
 
-</main>
 
 
 
 {/if}
 
+</main>
 <style>
 
 
@@ -47,11 +44,7 @@
   -o-background-size: cover;
   background-size: cover;
 	background-repeat: no-repeat;
-	background-image: 100%;
-	padding-bottom: 15%;
-	height: 75%;
-
-
+	height:100vh;width:100vw
 	}
 
 </style>

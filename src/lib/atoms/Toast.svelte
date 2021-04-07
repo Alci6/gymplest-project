@@ -20,29 +20,25 @@
 		z-index: 1;
 		left: 0;
 		right: 0;
-		bottom: 30px;
+		bottom: 200px;
 		font-size: 17px;
 		white-space: nowrap;
+		overflow: hidden;
 	}
 	#toast #img {
 		width: 50px;
 		height: 50px;
-
 		float: left;
-
 		padding-top: 16px;
 		padding-bottom: 16px;
-
 		box-sizing: border-box;
-
 		background-color: #4f4f4f;
 		color: #fff;
+		overflow: hidden;
 	}
 	#toast #desc {
 		color: #fff;
-
 		padding: 16px;
-
 		overflow: hidden;
 		white-space: nowrap;
 	}
@@ -62,7 +58,7 @@
 			opacity: 0;
 		}
 		to {
-			bottom: 30px;
+			bottom: 200px;
 			opacity: 1;
 		}
 	}
@@ -73,7 +69,7 @@
 			opacity: 0;
 		}
 		to {
-			bottom: 30px;
+			bottom: 200px;
 			opacity: 1;
 		}
 	}
@@ -132,22 +128,22 @@
 
 	@-webkit-keyframes fadeout {
 		from {
-			bottom: 30px;
+			bottom: 200px;
 			opacity: 1;
 		}
 		to {
-			bottom: 60px;
+			bottom: 500px;
 			opacity: 0;
 		}
 	}
 
 	@keyframes fadeout {
 		from {
-			bottom: 30px;
+			bottom: 200px;
 			opacity: 1;
 		}
 		to {
-			bottom: 60px;
+			bottom: 500px;
 			opacity: 0;
 		}
 	}
@@ -157,5 +153,5 @@
 	<div id="img">
 		<img src="img/save.svg" alt="send">
 	</div>
-	<div id="desc"><slot/> </div>
+	<div id="desc" class="pre">Información Recibida </div>
 </div>
