@@ -50,7 +50,7 @@ let showToast = false;
 
 			<div class="mb3">
 				<h4 class=" noselect mb1 dark-gray ">email</h4>
-				<Input bind:value={email} placeholder="federer@gmail.com" />
+				<Input bind:value={email} placeholder="rafa.nadal@gmail.com" />
 			</div>
 
 			<div>
