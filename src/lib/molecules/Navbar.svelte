@@ -7,9 +7,10 @@
 		<img src="img/gymplest logo.svg" class="dib" alt="Site Name" />
 	</div>
 	<div class="dtc v-mid w-75 tr noselect">
-		<p class="link underline-hover white f6 f5-ns dib mr3 mr4-ns lh-copy" href="2" title="Store">
+		<p class="link underline-hover white f6  f4-m f3-l f5-ns dib mr3 mr4-ns lh-copy" href="2" title="más información">
 			¿En que consiste?
 		</p>
-		<Button type={'white-btn'} > ¡Apúntate! </Button>
+		<Button type={'white-btn'} > 			¡Apúntate!
+	</Button>
 	</div>
 </nav>

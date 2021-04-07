@@ -1,9 +1,10 @@
 <script>
-	import Navbar from './../organisms/Navbar.svelte';
-	import Form from './../organisms/Form.svelte';
+	import Head from "./../organisms/Head.svelte"; 
+	import Center from "./../organisms/Center.svelte"; 
 </script>
 
 <main>
-	<Navbar />
-	<Form />
+	<Head/>
+	<Center/> 
+	
 </main>

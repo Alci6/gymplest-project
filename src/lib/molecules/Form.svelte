@@ -2,23 +2,30 @@
 	import Button from './../atoms/Button.svelte';
 	import Input from './../atoms/Input.svelte';
 	import { v4 as uuidv4 } from 'uuid';
-
+	import Toast from "./../atoms/Toast.svelte"; 
 	import {db} from "./../../firebase.js"; 
 
 	let userDataObject = { id: '', email: '', postalCode: '' };
 	let { id, email, postalCode } = userDataObject;
 
 
+let showToast = false;  
+
+	const changeToast = () => {
+		showToast = !showToast;
+		setTimeout(() => (showToast = !showToast), 2000);
+	};
 
 	let onClick = () => {
 		id = uuidv4();
 
 		if(email){
-
-		
 		db.collection("leads").doc(id).set({id, email, postalCode})
+
+		changeToast(); 
 		email = '';
 		postalCode = ''; 
+
 		}
 	};
 </script>
@@ -31,22 +38,22 @@
 			</h1>
 
 			<div class="mb3">
-				<h4 class=" noselect mb1 dark-gray roboto">email</h4>
+				<h4 class=" noselect mb1 dark-gray ">email</h4>
 				<Input bind:value={email} placeholder="federer@gmail.com" />
 			</div>
 
 			<div>
-				<h4 class="noselect mb1 dark-gray roboto">código postal</h4>
+				<h4 class="noselect mb1 dark-gray ">código postal</h4>
 
 				<Input bind:value={postalCode} placeholder="28008" />
 			</div>
-			<div class="tr mr4">
+			<div class="tr mr4 roboto">
 				<Button {onClick} type={'orange-btn'}>Únete</Button>
 			</div>
 		</div>
 	</form>
 </section>
-
+	<Toast {showToast} >Información Recibida</Toast> 
 <style>
 	.formDiv {
 		height: 26em;

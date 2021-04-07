@@ -3,7 +3,7 @@
 	export let onClick = () => {console.log('clicked')};
 </script>
 
-<p class="noselect link dim  f6 f5-ns dib lh-copy ba pa2 {type}" on:click="{onClick}" href="3" title="Contact">
+<p class="noselect link dim  f6  f4-m f3-l f5-ns  dib lh-copy ba pa2 {type}" on:click="{onClick}" href="3" title="Contact">
 	<slot />
 </p>
 
