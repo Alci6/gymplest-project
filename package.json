@@ -2,12 +2,14 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.js\"", 
+    "test": "web-test-runner \"src/**/*.test.js\"",
     "prod": "npm run build; vercel --prod"
   },
   "dependencies": {
     "firebase": "^8.3.2",
-    "svelte": "^3.24.0"
+    "focus-options-polyfill": "^1.6.0",
+    "svelte": "^3.24.0",
+    "svelte-parallax": "^0.2.0"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.0.5",
