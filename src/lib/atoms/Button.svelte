@@ -19,6 +19,6 @@
 		background-color: #fe6f61;
 		padding-left: 1rem;
 		padding-right: 1rem;
-		font-family: Roboto;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
 	}
 </style>
