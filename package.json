@@ -2,7 +2,8 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.js\""
+    "test": "web-test-runner \"src/**/*.test.js\"", 
+    "prod": "npm run build; vercel --prod"
   },
   "dependencies": {
     "firebase": "^8.3.2",

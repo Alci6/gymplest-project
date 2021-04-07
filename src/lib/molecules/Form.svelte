@@ -29,10 +29,21 @@ let showToast = false;
 		}
 	};
 </script>
+<style>
+	.maxwd{
+			max-width: 26rem;
+	}
 
+	.roboto {
+		font-family: Roboto;
+	}
+
+	.roboto-bold {
+		font-family: Roboto-Bold;
+	}
+</style>
 <section>
-	<form action="">
-		<div class="formDiv ma3 pa4 ml5 br3 shadow-4 noselect">
+		<div class=" bg-white ma3 pa4 maxwd center ml5-l br3 shadow-4 noselect">
 			<h1 class="roboto-bold noselect f3  b lh-title mt0 mb1 mb2-ns measure word-wrap dark-gray">
 				El equipamiento que necesitas donde y cuando lo necesites.
 			</h1>
@@ -51,21 +62,6 @@ let showToast = false;
 				<Button {onClick} type={'orange-btn'}>Únete</Button>
 			</div>
 		</div>
-	</form>
 </section>
 	<Toast {showToast} >Información Recibida</Toast> 
-<style>
-	.formDiv {
-		height: 26em;
-		width: 26em;
-		background-color: white;
-	}
 
-	.roboto {
-		font-family: Roboto;
-	}
-
-	.roboto-bold {
-		font-family: Roboto-Bold;
-	}
-</style>
