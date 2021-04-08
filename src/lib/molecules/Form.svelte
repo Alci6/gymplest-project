@@ -5,9 +5,12 @@
 	import Toast from "./../atoms/Toast.svelte"; 
 	import {db} from "./../../firebase.js"; 
 
-	let userDataObject = { id: '', email: '', postalCode: '' };
-	let { id, email, postalCode } = userDataObject;
+	export let title = "El equipamiento que necesitas donde y cuando lo necesites."
 
+	let userDataObject = { id: '', email: '', postalCode: '', time: "" };
+	let { id, email, postalCode, time } = userDataObject;
+	const timeElapsed = Date.now();
+	const today = new Date(timeElapsed);
 
 let showToast = false;  
 
@@ -18,10 +21,10 @@ let showToast = false;
 
 	let onClick = () => {
 		id = uuidv4();
-
+		time =  today.toUTCString();  
 		if(email){
-		db.collection("leads").doc(id).set({id, email, postalCode})
-
+		db.collection("leads").doc(id).set({id, email, postalCode, time})
+		
 		changeToast(); 
 		email = '';
 		postalCode = ''; 
@@ -45,7 +48,7 @@ let showToast = false;
 <section>
 		<div class=" bg-white ma3 pa4 maxwd center ml5-l br3 shadow-4 noselect">
 			<h1 class="roboto-bold noselect f3  b lh-title mt0 mb1 mb2-ns measure word-wrap dark-gray">
-				El equipamiento que necesitas donde y cuando lo necesites.
+				{title}
 			</h1>
 
 			<div class="mb3">
