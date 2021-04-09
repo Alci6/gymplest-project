@@ -24,7 +24,11 @@
 {:else}
 
 			<Navbar />
+			<div class="pa3">
+				
+
 			<Form />
+			</div>
 
 
 

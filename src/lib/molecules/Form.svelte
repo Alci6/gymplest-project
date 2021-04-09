@@ -46,7 +46,7 @@ let showToast = false;
 	}
 </style>
 <section>
-		<div class=" bg-white ma3 pa4 maxwd center ml5-l br3 shadow-4 noselect">
+		<div class="bg-white ma3 pa4 maxwd center ml5-l br3 shadow-4 noselect">
 			<h1 class="roboto-bold noselect f3  b lh-title mt0 mb1 mb2-ns measure word-wrap dark-gray">
 				{title}
 			</h1>
