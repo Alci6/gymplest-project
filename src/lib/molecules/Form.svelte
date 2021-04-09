@@ -31,6 +31,11 @@ let showToast = false;
 
 		}
 	};
+
+
+	export let placeholderEmail = "rafa.nadal@gmail.com"; 
+
+	export let placeholderPostalCode = "28008"; 
 </script>
 <style>
 	.maxwd{
@@ -53,13 +58,13 @@ let showToast = false;
 
 			<div class="mb3">
 				<h4 class=" noselect mb1 dark-gray ">email</h4>
-				<Input bind:value={email} placeholder="rafa.nadal@gmail.com" />
+				<Input bind:value={email} placeholder="{placeholderEmail} " />
 			</div>
 
 			<div>
 				<h4 class="noselect mb1 dark-gray ">código postal</h4>
 
-				<Input bind:value={postalCode} placeholder="28008" />
+				<Input bind:value={postalCode} placeholder="{placeholderPostalCode} " />
 			</div>
 			<div class="tr mr4 roboto">
 				<Button {onClick} type={'orange-btn'}>Únete</Button>

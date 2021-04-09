@@ -15,7 +15,7 @@
 
 <div class=" pa3 pattern" id="formulario">
 	<div class=" center mw6 ">
-			<Form title={"¡Apúntate ya a la beta privada!"} />
+			<Form placeholderEmail="pau.gasol@hotmail.com" placeholderPostalCode="28050" title={"¡Apúntate ya a la beta privada!"} />
 	</div>		
 </div>
 
